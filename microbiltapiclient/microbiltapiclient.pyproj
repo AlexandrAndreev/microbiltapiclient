@@ -1,0 +1,93 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>76bcd1fe-cb1e-4831-897b-379d92f0aded</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>microbiltapiclient.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>microbiltapiclient</Name>
+    <RootNamespace>microbiltapiclient</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="microbiltapiclient.py" />
+    <Compile Include="microbiltapiclient\abaacctverification.py" />
+    <Compile Include="microbiltapiclient\achcheckprescreen.py" />
+    <Compile Include="microbiltapiclient\achcheckprescreenextended.py" />
+    <Compile Include="microbiltapiclient\achcheckprescreenlite.py" />
+    <Compile Include="microbiltapiclient\addressnameverification.py" />
+    <Compile Include="microbiltapiclient\addressstandardization.py" />
+    <Compile Include="microbiltapiclient\autentificate.py" />
+    <Compile Include="microbiltapiclient\bankaccountsearchv2.py" />
+    <Compile Include="microbiltapiclient\bankruptcysearch.py" />
+    <Compile Include="microbiltapiclient\bav.py" />
+    <Compile Include="microbiltapiclient\complytraq.py" />
+    <Compile Include="microbiltapiclient\criminalsearchv2.py" />
+    <Compile Include="microbiltapiclient\deathmasterfilevalidation.py" />
+    <Compile Include="microbiltapiclient\dlsearch.py" />
+    <Compile Include="microbiltapiclient\dlverify.py" />
+    <Compile Include="microbiltapiclient\emailsearch.py" />
+    <Compile Include="microbiltapiclient\emailvalidation.py" />
+    <Compile Include="microbiltapiclient\employmentsearch.py" />
+    <Compile Include="microbiltapiclient\enhancedpeoplesearch.py" />
+    <Compile Include="microbiltapiclient\equifax.py" />
+    <Compile Include="microbiltapiclient\equifaxca.py" />
+    <Compile Include="microbiltapiclient\evictionssearch.py" />
+    <Compile Include="microbiltapiclient\experian.py" />
+    <Compile Include="microbiltapiclient\ibv.py" />
+    <Compile Include="microbiltapiclient\idverify.py" />
+    <Compile Include="microbiltapiclient\integra.py" />
+    <Compile Include="microbiltapiclient\ipaddressinfo.py" />
+    <Compile Include="microbiltapiclient\ipredict.py" />
+    <Compile Include="microbiltapiclient\mbclr.py" />
+    <Compile Include="microbiltapiclient\mbcr.py" />
+    <Compile Include="microbiltapiclient\mbrequest.py" />
+    <Compile Include="microbiltapiclient\mlaverify.py" />
+    <Compile Include="microbiltapiclient\nadavehiclepricing.py" />
+    <Compile Include="microbiltapiclient\ofacwatchlistsearch.py" />
+    <Compile Include="microbiltapiclient\payrollverification.py" />
+    <Compile Include="microbiltapiclient\phoneaddressverification.py" />
+    <Compile Include="microbiltapiclient\phonenameverification.py" />
+    <Compile Include="microbiltapiclient\phonesearch.py" />
+    <Compile Include="microbiltapiclient\professionallicensesearch.py" />
+    <Compile Include="microbiltapiclient\propertysearch.py" />
+    <Compile Include="microbiltapiclient\reversephonesearch.py" />
+    <Compile Include="microbiltapiclient\ssnaddressverification.py" />
+    <Compile Include="microbiltapiclient\ssnnameverification.py" />
+    <Compile Include="microbiltapiclient\ssnphoneverification.py" />
+    <Compile Include="microbiltapiclient\ssnvalidation.py" />
+    <Compile Include="microbiltapiclient\tracedetail.py" />
+    <Compile Include="microbiltapiclient\transunion.py" />
+    <Compile Include="microbiltapiclient\uccsearchreport.py" />
+    <Compile Include="microbiltapiclient\vehiclesearch.py" />
+    <Compile Include="microbiltapiclient\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="microbiltapiclient\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
